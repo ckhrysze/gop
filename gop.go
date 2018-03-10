@@ -27,13 +27,13 @@ var RegionField string = "region"
 type OnePassItem struct {
 	Details struct {
 		Sections []struct {
-			Title  string `json:title`
+			Title  string `json:"title"`
 			Fields []struct {
-				T string `json:t`
-				V string `json:v`
-			} `json:fields`
-		} `json:sections`
-	} `json:details`
+				T string `json:"t"`
+				V string `json:"v"`
+			} `json:"fields"`
+		} `json:"sections"`
+	} `json:"details"`
 }
 
 // main turns 1password json via std and output 'source'able env var output

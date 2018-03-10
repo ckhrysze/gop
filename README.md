@@ -6,7 +6,7 @@ Welcome to the GOP repo! This was a quick experiment to see if I could set the n
 
 ### Usage
 ```
-source < (op get "name of 1password item" | gop)
+source <(op get "name of 1password item" | gop)
 ```
 
 or
