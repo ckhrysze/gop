@@ -1,6 +1,5 @@
-/* Package main assumes a 1password json object for the op cli tool's
-get command is fed in via stdin
-*/
+// Package main assumes a 1password json object for the op cli tool's
+// get command is fed in via stdin
 package main
 
 import (
@@ -10,12 +9,21 @@ import (
 	"os"
 )
 
+// variabled can be set with -ldflags "-X main.SectionName=<whatever>"
+
+// SectionName is the 1password section containing AWS credentials
 var SectionName string = "Credentials"
+
+// AccessField is the 1password field with the AWS access key
 var AccessField string = "access"
+
+// SecretField is the 1password field with the AWS secret key
 var SecretField string = "secret"
+
+// RegionField is the 1password field with the AWS default region
 var RegionField string = "region"
 
-// The minimal structure needed to get the AWS credentials
+// OnePassItem sets up the minimal structure needed to get AWS credentials
 type OnePassItem struct {
 	Details struct {
 		Sections []struct {
@@ -28,7 +36,7 @@ type OnePassItem struct {
 	} `json:details`
 }
 
-// main takes
+// main turns 1password json via std and output 'source'able env var output
 func main() {
 	dec := json.NewDecoder(os.Stdin)
 
