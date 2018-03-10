@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/ckhrysze/gop)](https://goreportcard.com/report/github.com/ckhrysze/gop)
+
 # GOP
 
 Welcome to the GOP repo! This was a quick experiment to see if I could set the needed AWS environment variables for terraform from the 1password CLI client. As it turns out, it was quite straight forward.
