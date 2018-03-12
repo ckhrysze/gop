@@ -1,4 +1,5 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/ckhrysze/gop)](https://goreportcard.com/report/github.com/ckhrysze/gop)
+[![Build Status](https://travis-ci.org/ckhrysze/gop.svg?branch=master)](https://travis-ci.org/ckhrysze/gop)
 
 # GOP
 
