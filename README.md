@@ -9,9 +9,11 @@ Welcome to the GOP repo! This was a quick experiment to see if I could set the n
 
 ![Usage Example](usage.png)
 
-### Installation
+### Setup
 
-I haven't gotten that far yet. Well, builds anyway. I just `go build -o gop` and mv the executable to my PATH somewhere.
+I haven't gotten builds setup yet. I just `go build -o gop` and mv the executable to my PATH somewhere. For 1Password itself, the default section and labels are as follows:
+
+~[1Password Setup](setup.png)
 
 ### Notes
 
