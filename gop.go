@@ -54,11 +54,11 @@ func parse1PasswordEntry(input io.Reader) []string {
 			for _, field := range section.Fields {
 				switch field.T {
 				case AccessField:
-					output = append(output, fmt.Sprintf("export AWS_ACCESS_KEY_ID=%v", field.V))
+					output = append(output, fmt.Sprintf("export AWS_ACCESS_KEY_ID='%v'", field.V))
 				case SecretField:
-					output = append(output, fmt.Sprintf("export AWS_SECRET_ACCESS_KEY=%v", field.V))
+					output = append(output, fmt.Sprintf("export AWS_SECRET_ACCESS_KEY='%v'", field.V))
 				case RegionField:
-					output = append(output, fmt.Sprintf("export AWS_DEFAULT_REGION=%v", field.V))
+					output = append(output, fmt.Sprintf("export AWS_DEFAULT_REGION='%v'", field.V))
 				}
 			}
 		}

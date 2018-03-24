@@ -6,15 +6,8 @@
 Welcome to the GOP repo! This was a quick experiment to see if I could set the needed AWS environment variables for terraform from the 1password CLI client. As it turns out, it was quite straight forward.
 
 ### Usage
-```
-source <(op get "name of 1password item" | gop)
-```
 
-or
-
-```
-eval $(op get "name of 1password item" | gop)
-```
+![Usage Example](usage.png)
 
 ### Installation
 
@@ -29,3 +22,7 @@ go build -ldflags "-X main.SectionName=<section> main.AccessField=<access key fi
 ```
 
 should work.
+
+### TODO
+
+Learn about Go Releaser and prove that the ldflags works as intended.
